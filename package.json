@@ -1,0 +1,14 @@
+{
+  "name": "address_book_challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/maxarvid/address_book_challenge.git",
+  "author": "maxarvid <max.arvid.anderson@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^8.3.0"
+  },
+  "dependencies": {
+    "superstatic": "^7.1.0"
+  }
+}
