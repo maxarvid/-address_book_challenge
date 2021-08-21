@@ -1,7 +1,7 @@
 const storage = window.localStorage;
 
 const renderContacts = () => {
-  const contacts = JSON.parse(storege.getItem("contacts"));
+  const contacts = JSON.parse(storage.getItem("contacts"));
 
   let div = document.querySelector("#contact-list");
   if (contacts) {
@@ -11,9 +11,11 @@ const renderContacts = () => {
     contacts.forEach((contact) => {
       let li = document.createElement("li");
 
-      li.innerHTML = `<span>${contact.name}</span> | 
-                      <span>${contact.email}</span> | 
-                      <span>${contact.phone}</span>`;
+      li.innerHTML = `
+		  <span>${contact.name}</span> |
+		  <span>${contact.email}</span> |
+		  <span>${contact.phone}</span>
+	    `;
       ul.appendChild(li);
     });
 
@@ -54,4 +56,3 @@ document.addEventListener("DOMContentLoaded", () => {
     contactForm.reset();
   });
 });
- 
